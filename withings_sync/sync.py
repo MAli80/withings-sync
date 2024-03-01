@@ -302,8 +302,8 @@ def prepare_syncdata(height, groups):
                 "%s This Withings metric contains no %s.  Not syncing...", dt, collected_metrics
             )
             groupdata_log_raw_data(group_data)
-            # for now, remove the entry as we're handling only weight and feature enabled data
-            del sync_dict[dt]
+            # (test) for now, remove the entry as we're handling only weight and feature enabled data
+            # del sync_dict[dt]
             continue
 
         if height and "weight" in group_data:
